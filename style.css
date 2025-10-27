@@ -26,16 +26,14 @@
     z-index: -1;
   }
   
-  h1{
+  h1 {
     font-size: 70px;
     margin-bottom: 700px;
-  
   }
   
   .menu {
     display: flex;
     justify-content: center;
-    gap: 2rem;
     gap: 350px;
   }
   
@@ -96,5 +94,88 @@
     width: 300px;
     border-radius: 10px;
     margin-bottom: 15px;
+  }
+  
+  @media (max-width: 1024px) {
+    h1 {
+      font-size: 50px;
+      margin-bottom: 400px;
+    }
+  
+    .menu {
+      gap: 150px;
+    }
+  
+    button {
+      font-size: 18px;
+      padding: 20px 40px;
+    }
+  
+    input {
+      width: 250px;
+    }
+  
+    #detalhe img {
+      width: 250px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 40px;
+      margin-bottom: 250px;
+    }
+  
+    .menu {
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+    }
+  
+    button {
+      width: 80%;
+      max-width: 300px;
+      padding: 18px 0;
+    }
+  
+    input {
+      width: 80%;
+    }
+  
+    #detalhe img {
+      width: 220px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 32px;
+      margin-bottom: 150px;
+    }
+  
+    body {
+      padding: 15px;
+    }
+  
+    .menu {
+      gap: 25px;
+    }
+  
+    button {
+      font-size: 16px;
+      padding: 15px 0;
+    }
+  
+    input {
+      width: 100%;
+    }
+  
+    .card img {
+      height: 150px;
+    }
+  
+    #detalhe img {
+      width: 180px;
+    }
   }
   
