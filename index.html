@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css" />
+  <script src="app.js" defer></script>
+  <title>Attack on Titan</title>
+  <meta name="referrer" content="no-referrer"> 
+</head>
+<body>
+
+  <section id="home">
+    <h1>Attack on Titan</h1>
+    <div class="menu">
+      <button onclick="carregarCategoria('characters')">Personagens</button>
+      <button onclick="carregarCategoria('titans')">Titãs</button>
+      <button onclick="carregarCategoria('locations')">Locais</button>
+    </div>
+  </section>
+
+  <section id="lista" class="hidden">
+    <input type="text" id="pesquisa" placeholder="Pesquisar">
+    <div id="galeria" class="galeria"></div>
+  </section>
+
+  <section id="detalhe" class="hidden">
+    <h2 id="tituloDetalhe"></h2>
+    <img id="imagemDetalhe" src="" alt="" referrerpolicy="no-referrer">
+    <p id="descricaoDetalhe"></p>
+    <button onclick="voltarInicio()">Voltar ao Início</button>
+  </section>
+
+</body>
+</html>

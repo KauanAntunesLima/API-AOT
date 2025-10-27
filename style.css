@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-image: url('./img/attack-on-titans-final-season-gets-new-art-first-teaser-trai_xchr.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    padding: 20px;
+    position: relative;
+  }
+  
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.486);
+    z-index: -1;
+  }
+  
+  h1{
+    font-size: 70px;
+    margin-bottom: 700px;
+  
+  }
+  
+  .menu {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    gap: 350px;
+  }
+  
+  button {
+    font-size: 20px;
+    padding: 30px 60px;
+    border: none;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  button:hover {
+    background-color: #ccc;
+  }
+  
+  input {
+    padding: 10px;
+    width: 300px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 20px;
+  }
+  
+  .galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 15px;
+    backdrop-filter: blur(10px);
+  }
+  
+  .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .card h3 {
+    margin: 10px 0;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  #detalhe img {
+    width: 300px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
